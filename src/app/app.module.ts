@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OpenStreetMapComponent } from './open-street-map/open-street-map.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OpenStreetMapComponent
   ],
   imports: [
     BrowserModule,
