@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 //componentes
 import {OpenStreetMapComponent} from './open-street-map/open-street-map.component';
+import {GoogleMapsComponent} from './google-maps/google-maps.component';
 
 const routes: Routes = [
-  {path: 'openSMap', component: OpenStreetMapComponent}
+  {path: 'openSMap', component: OpenStreetMapComponent},
+  {path: 'googleMaps', component: GoogleMapsComponent}
 ];
 
 @NgModule({

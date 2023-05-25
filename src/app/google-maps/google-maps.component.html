@@ -1,0 +1,19 @@
+<agm-map [latitude]="cp_lat" [longitude]="cp_lng" [zoom]="14" (mapClick)="ObtenerCoordenadasDelMapa($event)" >
+    <agm-marker [latitude]="cp_lat" [longitude]="cp_lng">
+        <agm-info-window>
+            <strong>Casa PLUS</strong>
+        </agm-info-window>
+    </agm-marker>
+    <agm-marker [latitude]="utn_lat" [longitude]="utn_lng">
+        <agm-info-window>
+            <strong>UTN</strong>
+        </agm-info-window>
+    </agm-marker>
+    <div id="popup">
+        <agm-marker [latitude]="lat" [longitude]="lng">
+            <agm-info-window>
+                <strong>Popup personalizado</strong>
+            </agm-info-window>
+        </agm-marker>
+    </div>
+</agm-map>
